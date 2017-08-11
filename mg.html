@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<title>g1</title>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script src="jquery-2.1.4.js"></script>
+<script src="jquery.mobile-1.4.5.js"></script>
+<script src="mg.js"></script>
+<style>
+html{width:370px;}
+.ui-mobile [data-role=page],
+.ui-mobile [data-role=popup],
+.ui-mobile [data-role=dialog],
+ .ui-page 
+{ 
+top: 0; 
+left: 0; 
+width: 100%; 
+min-height: 100%;
+}
+.ac11 { font-weight:bold;}
+.ui-popup-container
+ {
+    width:100%;
+    height: 100%;
+ }
+
+.rc01{position:absolute;top: 10px;left: 10px;}
+.rc02{position:absolute;top: 10px;left: 90px;}
+.rc03{position:absolute;top: 10px;left:170px;}
+.rc04{position:absolute;top: 10px;left:250px;}
+
+.rc05{position:absolute;top: 90px;left: 10px;}
+.rc06{position:absolute;top: 90px;left: 90px;}
+.rc07{position:absolute;top: 90px;left:170px;}
+.rc08{position:absolute;top: 90px;left:250px;}
+
+.rc09{position:absolute;top:170px;left: 10px;}
+.rc10{position:absolute;top:170px;left:90px;}
+.rc11{position:absolute;top:170px;left:170px;}
+.rc12{position:absolute;top:170px;left:250px;}
+
+.rc13{position:absolute;top:250px;left: 10px;}
+.rc14{position:absolute;top:250px;left:90px;}
+.rc15{position:absolute;top:250px;left:170px;}
+.rc16{position:absolute;top:250px;left:250px;}
+
+.active {
+    opacity: 0.01;
+  }
+.inside {
+    opacity: 0.01;
+  }
+ </style>
+
+
+ 
+</head>
+<body>
+
+ <div data-role="page" id="home">
+    <div data-role="header">3JQ:Memory game</div>
+    <div data-role="content">
+
+ <h4>Try to minimize a result</h4>
+    <a href="#a103" data-rel="popup"  data-transition="slide" 
+       data-role='button'   id='ad001'
+       data-ajax='true' >start</a>
+    <!--data-ajax='true' onclick='a301();'>start</a>-->
+   <label for='ai17'></label>
+   <input type='text' id='ai17' class='ac11'
+      placeholder='result=seconds+touchs-26'/>
+
+ <div data-role="popup" id="a103">
+          <div data-role="header" id='a113' >
+            <h2>memory game</h2>
+          </div>
+          <div data-role="main" class="ui-content">
+
+             <p id='time'></p>
+            <h5>for result and new game click end</h5>
+            <div id='a203' style='width:320px;height:330px;
+                 position:relative;'>
+
+              <div id='a501'></div>
+              <div id='a502'></div>
+              <div id='a503'></div>
+              <div id='a504'></div>
+              <div id='a505'></div>
+              <div id='a506'></div>
+              <div id='a507'></div>
+              <div id='a508'></div>
+              <div id='a509'></div>
+              <div id='a510'></div>            
+              <div id='a511'></div>
+              <div id='a512'></div>
+              <div id='a513'></div>
+              <div id='a514'></div>
+              <div id='a515'></div>
+              <div id='a516'></div>
+
+            </div>
+
+          <a href="#" class="ui-btn ui-corner-all ui-shadow 
+             ui-btn-inline ui-icon-back ui-btn-icon-left" 
+             data-rel="back" data-ajax='true'  id='ad1031'>
+             end of a game</a>
+<!--onclick='a309();' >end of a game</a> -->
+          </div>     
+      </div><!--pop103-->
+
+
+    </div><!--cont-->
+ </div><!--home-->
+
+<div class='ac11'></div>
+
+</body>
+</html>
